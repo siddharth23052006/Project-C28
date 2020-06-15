@@ -16,7 +16,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	ball = new Ball(300,200,30);
+	ball = new Ball(300,300,30);
 
 	//Create a Ground
 	ground = new Ground(400,395,800,10)
@@ -25,7 +25,7 @@ function setup() {
 	edge2 = new SideEdges(555,340,10,100);
 	edge3 = new BottomEdge(600,380,80,20)
 
-	string = new String(ball.body,{x:300, y:180});
+	string = new String(ball.body,{x:300, y:280});
 
 	Engine.run(engine);
   
