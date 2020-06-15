@@ -4,7 +4,7 @@ class String {
             bodyA: bodyA,
             pointB: pointB,
             stiffness: 0.02,
-            length: 30
+            length: 20
         }
        this.string = Constraint.create(options);
        World.add(world, this.string);

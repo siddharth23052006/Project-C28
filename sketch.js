@@ -10,22 +10,22 @@ const Render = Matter.Render;
 const Constraint = Matter.Constraint
 
 function setup() {
-	createCanvas(800, 1000);
+	createCanvas(800, 400);
 
 
 	engine = Engine.create();
 	world = engine.world;
 
-	ball = new Ball(200,800,30);
+	ball = new Ball(300,200,30);
 
 	//Create a Ground
-	ground = new Ground(400,995,800,10)
+	ground = new Ground(400,395,800,10)
 
-	edge1 = new SideEdges(645,940,10,100);
-	edge2 = new SideEdges(555,940,10,100);
-	edge3 = new BottomEdge(600,980,80,20)
+	edge1 = new SideEdges(645,340,10,100);
+	edge2 = new SideEdges(555,340,10,100);
+	edge3 = new BottomEdge(600,380,80,20)
 
-	string = new String(ball.body,{x:200, y:780});
+	string = new String(ball.body,{x:300, y:180});
 
 	Engine.run(engine);
   
